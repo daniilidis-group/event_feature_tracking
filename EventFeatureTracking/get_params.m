@@ -43,7 +43,7 @@ params.debug = false;
 % scene, needs to be larger than 3 pixels of motion roughly.
 params.def_int_time = 1;
 % Set to true to use the IMU rotations for RANSAC, as in EVIO.
-params.do_ransac = false;
+params.do_ransac = true;
 % If true, tracking will be done inside a parfor loop.
 params.do_parallel = true;
 % Do tracking.
@@ -70,7 +70,7 @@ params.use_initial_template = false;
 % performed from scratch. In MATLAB, the full optimization is actually
 % faster as it requires fewer iterations to converge, and for loops are
 % much worse than the other computations.
-params.use_em1_template = true;
+params.use_em1_template = false;
 % Number of initial point sets to concatenate for canonical set of events.
 params.num_init = 3;
 % Minimum number of events in the feature window required to perform EM.
