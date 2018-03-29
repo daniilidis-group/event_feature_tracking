@@ -71,8 +71,8 @@ end
 
 % undistortedPoints = undistortPoints([X Y], cameraParams);
 inds = sub2indc(X+1, Y+1, [rows, cols]);
-undistort_map_x(inds) = undistortedPoints(:, 1);
-undistort_map_y(inds) = undistortedPoints(:, 2);
+undistort_map_x(inds) = undistorted_points(:, 1);
+undistort_map_y(inds) = undistorted_points(:, 2);
 
 save(output_name, 'undistort_map_x', 'undistort_map_y', '-v7.3');
 end
