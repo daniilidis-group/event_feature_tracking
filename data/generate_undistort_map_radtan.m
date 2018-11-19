@@ -39,7 +39,7 @@ if nargin < 3
     batch_size = 1;
 end
 
-K = reshape(cinfo.K, 3, 3)';
+K = reshape(cinfo.K, 3, 3);
 D = cinfo.D;
 rows = cinfo.height;
 cols = cinfo.width;
