@@ -70,6 +70,7 @@ for i=1:batch_size:n_pts
 end
 
 % undistortedPoints = undistortPoints([X Y], cameraParams);
+addpath('../EventFeatureTracking/Tracker/')
 inds = sub2indc(X+1, Y+1, [rows, cols]);
 undistort_map_x(inds) = undistorted_points(:, 1);
 undistort_map_y(inds) = undistorted_points(:, 2);
